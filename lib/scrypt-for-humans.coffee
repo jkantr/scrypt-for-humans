@@ -68,7 +68,7 @@ module.exports =
 
 	verifyHash: (password, hash, callback) ->
 		(new Promise (resolve, reject) ->
-			hashBuffer = new Buffer(hash, "base64")
+			hashBuffer = Buffer.from(hash, "base64")
 			scrypt.verifyKdf hashBuffer, normalizePassword(password), scryptHandler(resolve, reject)
 		).nodeify(callback)
 
