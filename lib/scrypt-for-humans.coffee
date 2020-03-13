@@ -1,4 +1,4 @@
-scrypt = require "scrypt"
+scrypt = require "node-scrypt2"
 errors = require "errors"
 Promise = require "bluebird"
 
