@@ -132,14 +132,18 @@ This error is thrown if there is a different problem with the input (either the 
 
 ### scrypt.InternalError
 
-This error is thrown when an internal error of some other kind occurs in the `scrypt` library. The original error message is retained.
+This error is thrown when an internal error of some other kind occurs in the `node-scrypt` library. The original error message is retained.
 
 ### scrypt.scryptLib
 
-Provides access to the underlying `scrypt` library that is used. Useful if you want to eg. specify custom Scrypt parameters.
+Provides access to the underlying `node-scrypt2` library that is used. Useful if you want to eg. specify custom Scrypt parameters.
 
 ## Changelog
 
 ### v1.0.0
 
 Initial release.
+
+### v2.1.0
+
+Utilizes `node-scrypt2` to support node 10+.
